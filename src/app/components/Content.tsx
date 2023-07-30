@@ -6,7 +6,7 @@ function Content() {
     return (
 
     <div className="content-container">
-         <div className="title">
+         <div className="page-title">
              <h2>Common Eye Disorders and Diseases</h2>
         </div>
         <>

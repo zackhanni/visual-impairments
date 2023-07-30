@@ -6,4 +6,17 @@
   --ocean: #2D5278;
   --sand: #f3ede9;
   --fish: #DC654A;
+  --night: #1f2937;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: var(--ocean);
+}
+
