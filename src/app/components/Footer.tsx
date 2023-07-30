@@ -30,9 +30,9 @@ const Footer = () => {
                     <h4>About Me</h4>
                     <p>I enjoy coding, learning, and audio engineering. I am open href discussing new projects and design challenges.</p>
                     <div className="social">
-                        <Link href="https://www.linkedin.com/in/zackhanni/" target="_blank"><FaLinkedin size={30} style={{color: "white", marginRight: "1rem"}}/></Link>
-                        <Link href="https://github.com/zackhanni" target="_blank"><FaGithub size={30} style={{color: "white", marginRight: "1rem"}}/></Link>
-                        <Link href="https://dribbble.com/zackhanni" target="_blank"><FaDribbble size={30} style={{color: "white", marginRight: "1rem"}}/></Link>
+                        <Link href="https://www.linkedin.com/in/zackhanni/" target="_blank"><FaLinkedin size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
+                        <Link href="https://github.com/zackhanni" target="_blank"><FaGithub size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
+                        <Link href="https://dribbble.com/zackhanni" target="_blank"><FaDribbble size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
                     </div>
                 </div>
             </div>

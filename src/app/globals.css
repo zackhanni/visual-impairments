@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: aliceblue;
-  color: aliceblue;
-} */
+:root {
+  --ocean: #2D5278;
+  --sand: #f3ede9;
+  --fish: #DC654A;
+}

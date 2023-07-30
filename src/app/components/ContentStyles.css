@@ -1,20 +1,26 @@
 .title {
     height: 5rem;
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--ocean);
     margin-top: 100px;
+    padding: 40px;
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
+    color: var(--sand);
+    justify-content: center;
+    border-radius: 5px;
+    
 
 }
 
 .content-container {
-    color:black;
+    color: var(--ocean);
     width: 100%;
-    background-color: rgb(217, 217, 217);
+    background-color: var(--sand);
     padding: 1rem 1rem;
     border-radius: 10px;
+    box-shadow: 5px;
 }
 
 .card-title {
@@ -24,11 +30,18 @@
     text-transform: uppercase;
     display: flex;
     justify-content:space-between;
-    background-color: aliceblue;
+    background-color: var(--sand);
     width: 100%;
-
-
     /* something row: 1 col */
+}
+
+
+@media screen and (max-width: 640px) {
+    .card-title {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .card-body {
@@ -37,15 +50,15 @@
 
 .card-body a {
     font-size: 1.25rem;
-    background-color: blanchedalmond;
+    background-color: var(--fish);
 
 }
 
 .btn {
-    background-color: blue;
+    background-color: var(--fish);
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    color: white;
+    color: var(--sand);
     border-bottom: 0;
     text-align: center;
     margin: 1rem;
@@ -58,12 +71,12 @@
 }
 
 .btn:hover {
-    background-color: rgb(84, 84, 255);
+    background-color: var(--ocean);
 }
 
 .btn:active {
-    background-color: aliceblue;
-    color: black;
+    background-color: var(--sand);
+    color: var(--ocean);
     outline-color: transparent;
     outline-style:solid;
     box-shadow: 0 0 0 4px #5a01a7; 
