@@ -1,0 +1,70 @@
+.title {
+    height: 5rem;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
+.content-container {
+    color:black;
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-between;
+    background-color: aliceblue;
+    width: 100%;
+
+
+    /* something row: 1 col */
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+.card-body a {
+    font-size: 1.25rem;
+    background-color: blanchedalmond;
+
+}
+
+.btn {
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    border-bottom: 0;
+    text-align: center;
+    margin: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card {
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(84, 84, 255);
+}
+
+.btn:active {
+    background-color: aliceblue;
+    color: black;
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7; 
+}
