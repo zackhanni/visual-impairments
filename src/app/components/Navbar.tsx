@@ -18,10 +18,10 @@ const Navbar = () => {
         }
     };
 
-    window.addEventListener("scroll", changeColor);
+    // window.addEventListener("scroll", changeColor);
 
     return (
-        <div className="header">
+        <div className="nav-header">
             <Link href="/">
                 <h1>Visual Impairment Simulator</h1>
             </Link>
