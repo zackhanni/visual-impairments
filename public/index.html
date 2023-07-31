@@ -9,102 +9,97 @@
     <script src="./static/bundle/script.js" defer></script>
 </head>
 <body>
-    <p> This is a test. hello to whoever reads this.</p>
-    <p>
-        <button>This is a button</button>
-    </p>
-    
-</body>
-</html>
+    <!-- navbar -->
+    <div class="nav-header">
+        <Link href="/">
+            <h1>Visual Impairment Simulator</h1>
+        </Link>
+        <div class="nav-menu">
+            <ul class={ click ? "nav-menu active" : "nav-menu"}>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">Contact</a>
+                </li>
+                <li>
+                    <a href="/">Try it out!</a>
+                </li>
+            </ul>
+        </div>
 
-<!-- navbar -->
-<div className="nav-header">
-    <Link href="/">
-        <h1>Visual Impairment Simulator</h1>
-    </Link>
-    <div className="nav-menu">
-        <ul className={ click ? "nav-menu active" : "nav-menu"}>
-            <li>
-                <Link href="/">Home</Link>
-            </li>
-            <li>
-                <Link href="/">Contact</Link>
-            </li>
-            <li>
-                <Link href="/">Try it out!</Link>
-            </li>
-        </ul>
+        <!-- <div class="hamburger" onClick={handleClick}>
+        { click ? (
+        <FaTimes size={20} style={{ color: "var(--sand)" }} />
+        ) : (
+        <FaBars size={20} style={{ color: "var(--sand)" }} />
+        )}
+        </div> -->
     </div>
 
-    <div className="hamburger" onClick={handleClick}>
-    { click ? (
-    <FaTimes size={20} style={{ color: "var(--sand)" }} />
-    ) : (
-    <FaBars size={20} style={{ color: "var(--sand)" }} />
-    )}
-    </div>
-</div>
+    <!-- content -->
+    <div class="main" id="main">
+        <div class="cursor-box" id="spotlight">
+            <div class="content-container cursor-box-child" id="spotlight-child">
+                <div class="page-title">
+                    <h2>Common Eye Disorders and Diseases</h2>
+                </div>
+                <div id="cards">
 
-<!-- content -->
-<div className="main" id="main">
-    <div className="cursor-box" id="spotlight">
-        <div className="content-container cursor-box-child" id="spotlight-child">
-            <div className="page-title">
-                <h2>Common Eye Disorders and Diseases</h2>
+                    <!-- <div id="card" class="card">
+
+                        <div class="card-title">
+                            <h2>data.impairment</h2>
+                            <button id="btn" class="btn" >Click to activate</button>
+                        </div>
+            
+                        <div id="about" class="card-body">
+                            <p>data.about</p>
+
+            
+                            <a href={data.website}>Learn More about {data.impairment}</a>
+                        </div>
+                    </div> -->
+                </div>
             </div>
-            <>
-                { impairmentData.map(impairment =>
-                <div className="container">
-                    <div className="card">
+        </div>
+    </div>
 
-                        <div className="card-title">
-                            <h2>{props.dataObject.impairment}</h2>
-                            <button className="btn" >Click to activate</button>
-                        </div>
-            
-            
-                        <div className="card-body">
-                            <p>{props.dataObject.about}</p>
-                            <p>{props.dataObject.about2}</p>
-            
-                            <a href={props.dataObject.website}>Learn More about {props.dataObject.impairment}</a>
-                        </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="left-side">
+                <h4>Rerouces to check out</h4>
+                <div class="resources">
+                    <div class="resource-links">
+
+                        <p>Resource 1</p>
+                        <p>Resource 2</p>
+                        <p>Resource 3</p>
+                        <br/>
+                        <p>Resource 4</p>
+                        <p>Resource 5</p>
+
                     </div>
                 </div>
-                )}
-            </>
-        </div>
-    </div>
-</div>
+            </div>
+            <div class="right-side">
 
-
-<!-- footer -->
-<div className="footer">
-    <div className="footer-container">
-        <div className="left-side">
-            <h4>Rerouces to check out</h4>
-            <div className="resources">
-                <div className="resource-links">
-
-                    <p>Resource 1</p>
-                    <p>Resource 2</p>
-                    <p>Resource 3</p>
-                    <br/>
-                    <p>Resource 4</p>
-                    <p>Resource 5</p>
-
+                <h4>About Me</h4>
+                <p>I enjoy coding, learning, and audio engineering. I am open href discussing new projects and design challenges.</p>
+                <div class="social">
+                    <!-- <Link href="https://www.linkedin.com/in/zackhanni/" target="_blank"><FaLinkedin size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
+                    <Link href="https://github.com/zackhanni" target="_blank"><FaGithub size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
+                    <Link href="https://dribbble.com/zackhanni" target="_blank"><FaDribbble size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link> -->
                 </div>
             </div>
         </div>
-        <div className="right-side">
-
-            <h4>About Me</h4>
-            <p>I enjoy coding, learning, and audio engineering. I am open href discussing new projects and design challenges.</p>
-            <div className="social">
-                <Link href="https://www.linkedin.com/in/zackhanni/" target="_blank"><FaLinkedin size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
-                <Link href="https://github.com/zackhanni" target="_blank"><FaGithub size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
-                <Link href="https://dribbble.com/zackhanni" target="_blank"><FaDribbble size={30} style={{color: "var(--sand)", marginRight: "1rem"}}/></Link>
-            </div>
-        </div>
     </div>
-</div>
+
+
+
+
+
+</body>
+</html>

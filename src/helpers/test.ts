@@ -1,1 +1,1 @@
-export const test = (value: number) => ++value;
+// export const test = (value: number) => ++value;
