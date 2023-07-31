@@ -1,11 +1,6 @@
 import { impairmentData } from "./impairmentData"
 
 const cardsElement = document.querySelector("#cards")
-const about = document.querySelector("#about")
-const activateButton = document.querySelector("#btn")
-
-
-
 
 function generateCard() {
 
@@ -58,5 +53,28 @@ function generateCard() {
 
     })
 }
-
 generateCard()
+
+
+function addSpotlight() {
+    // JavaScript
+    alert("inside addspotlight")
+    const spotlightSize = 100; // Set the desired spotlight size
+
+    document.addEventListener("mousemove", function (event) {
+        // Remove normalization of the event object for older browsers
+
+        let titleRect = document.querySelector(".content-container")?.getBoundingClientRect();
+        if (!titleRect) return; // Check if the element is found
+
+        let mouseX = event.clientX;
+        let spotlightX = mouseX - spotlightSize / 2 - titleRect.left;
+        let mouseY = event.clientY;
+        let spotlightY = mouseY - spotlightSize / 2 - titleRect.top;
+
+        const ccDiv = document.getElementById("content");
+        //ccDiv.style.backgroundPosition = spotlightX + "px " + spotlightY + "px";
+    }, false);
+}
+
+document.querySelector(".btn")?.addEventListener("click", addSpotlight)

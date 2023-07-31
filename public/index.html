@@ -11,59 +11,33 @@
 <body>
     <!-- navbar -->
     <div class="nav-header">
-        <Link href="/">
             <h1>Visual Impairment Simulator</h1>
-        </Link>
-        <div class="nav-menu">
-            <ul class={ click ? "nav-menu active" : "nav-menu"}>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">Contact</a>
-                </li>
-                <li>
-                    <a href="/">Try it out!</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- <div class="hamburger" onClick={handleClick}>
-        { click ? (
-        <FaTimes size={20} style={{ color: "var(--sand)" }} />
-        ) : (
-        <FaBars size={20} style={{ color: "var(--sand)" }} />
-        )}
-        </div> -->
     </div>
 
     <!-- content -->
-    <div class="main" id="main">
-        <div class="cursor-box" id="spotlight">
-            <div class="content-container cursor-box-child" id="spotlight-child">
-                <div class="page-title">
-                    <h2>Common Eye Disorders and Diseases</h2>
+
+    <div id="content" class="content-container">
+        <div class="page-title">
+            <h2>Common Eye Disorders and Diseases</h2>
+        </div>
+        <div id="cards">
+
+            <!-- <div id="card" class="card">
+
+                <div class="card-title">
+                    <h2>data.impairment</h2>
+                    <button id="btn" class="btn" >Click to activate</button>
                 </div>
-                <div id="cards">
+    
+                <div id="about" class="card-body">
+                    <p>data.about</p>
 
-                    <!-- <div id="card" class="card">
-
-                        <div class="card-title">
-                            <h2>data.impairment</h2>
-                            <button id="btn" class="btn" >Click to activate</button>
-                        </div>
-            
-                        <div id="about" class="card-body">
-                            <p>data.about</p>
-
-            
-                            <a href={data.website}>Learn More about {data.impairment}</a>
-                        </div>
-                    </div> -->
+                    <a href={data.website}>Learn More about {data.impairment}</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
+
 
 
     <!-- footer -->
