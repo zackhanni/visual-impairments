@@ -20,3 +20,16 @@ body {
   background-color: var(--ocean);
 }
 
+/* mouse spotlight */
+.cursor-box {
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 1.0);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.cursor-box .cursor-box-child {
+  z-index: 10;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: inset 0px 0px 200px 75px rgba(0,0,0,1.0);
+}
