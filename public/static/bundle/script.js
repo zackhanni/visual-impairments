@@ -1,0 +1,1 @@
+(()=>{"use strict";var r,t=(r=5,++r);alert(t)})();
