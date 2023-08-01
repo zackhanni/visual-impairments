@@ -56,25 +56,27 @@ function generateCard() {
 generateCard()
 
 
-function addSpotlight() {
-    // JavaScript
-    alert("inside addspotlight")
-    const spotlightSize = 100; // Set the desired spotlight size
+// spotlight3
+// https://codepen.io/Marichka94/pen/zewmpQ
+// /public/spotlight.html
+window.addEventListener("load", () => {
 
-    document.addEventListener("mousemove", function (event) {
-        // Remove normalization of the event object for older browsers
+    const spotlight = document.querySelector('.spotlight');
+    let spotlightSize = 'transparent 20%, rgba(0, 0, 0, 0.7) 30%';
 
-        let titleRect = document.querySelector(".content-container")?.getBoundingClientRect();
-        if (!titleRect) return; // Check if the element is found
+    window.addEventListener('mousemove', e => updateSpotlight(e));
+    window.addEventListener('mousedown', e => {
+        spotlightSize = 'transparent 10%, rgba(0, 0, 0, 0.9) 25%';
+        updateSpotlight(e);
+    });
 
-        let mouseX = event.clientX;
-        let spotlightX = mouseX - spotlightSize / 2 - titleRect.left;
-        let mouseY = event.clientY;
-        let spotlightY = mouseY - spotlightSize / 2 - titleRect.top;
+    window.addEventListener('mouseup', e => {
+        spotlightSize = 'transparent 20%, rgba(0, 0, 0, 0.7) 30%';
+        updateSpotlight(e);
+    });
 
-        const ccDiv = document.getElementById("content");
-        //ccDiv.style.backgroundPosition = spotlightX + "px " + spotlightY + "px";
-    }, false);
-}
-
-document.querySelector(".btn")?.addEventListener("click", addSpotlight)
+    function updateSpotlight(e) {
+		
+        spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
+    }
+});

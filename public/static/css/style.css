@@ -62,18 +62,15 @@ body {
     color: var(--ocean);
     /* background-color: var(--ocean); */
     padding: 1rem 0;
-    /* border-radius: 10px; */
-    /* box-shadow: 5px; */
 
-    /* overflow: hidden; */
-    /* background-image: #000; */
 }
-
-
 
 .card {
     padding: 2rem;
     background-color: var(--sand);
+    margin: 20px;
+    border-radius: 10px;
+    /* gap: 20px; */
 
 }
 
@@ -127,11 +124,6 @@ body {
     /* margin: 1rem; */
     transition: .3s;
     cursor: pointer;
-}
-
-.card {
-    margin: 20px;
-    border-radius: 10px;
 }
 
 .btn:hover {

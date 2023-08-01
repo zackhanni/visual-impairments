@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+          background: url(https://images.unsplash.com/photo-1487525219605-eadb39ae229c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=982&q=80);
+        background-size: cover;
+      height: 100vh;
+      cursor: none;
+  }
+  
+  .spotlight {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: radial-gradient(
+          circle,
+          transparent 10%,
+          rgba(0, 0, 0, 0.8) 30%
+      );
+  }
+  
