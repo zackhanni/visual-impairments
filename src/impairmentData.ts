@@ -16,5 +16,21 @@ export const impairmentData = [
 
       website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration"
     },
+    {
+      impairment: "Cateract",
+      about: "Cataract is a clouding of the eye’s lens and is the leading cause of blindness worldwide, and the leading cause of vision loss in the United States. Cataracts can occur at any age because of a variety of causes, and can be present at birth. Although treatment for the removal of cataract is widely available, access barriers such as insurance coverage, treatment costs, patient choice, or lack of awareness prevent many people from receiving the proper treatment",
+
+      about2: "",
+
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts"
+    },
+    {
+      impairment: "Diabetic Retinopathy",
+      about: "Diabetic retinopathy (DR) is a common complication of diabetes. It is the leading cause of blindness in American adults. It is characterized by progressive damage to the blood vessels of the retina, the light-sensitive tissue at the back of the eye that is necessary for good vision. DR progresses through four stages, mild nonproliferative retinopathy (microaneurysms), moderate nonproliferative retinopathy (blockage in some retinal vessels), severe nonproliferative retinopathy (more vessels are blocked leading to deprived retina from blood supply leading to growing new blood vessels), and proliferative retinopathy (most advanced stage). Diabetic retinopathy usually affects both eyes.",
+
+      about2: "",
+
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy"
+    }
 
   ]
