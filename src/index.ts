@@ -61,7 +61,7 @@ generateCard()
 // /public/spotlight.html
 window.addEventListener("load", () => {
 
-    const spotlight = document.querySelector('.spotlight');
+    const spotlight = document.querySelector('.spotlight') as HTMLElement;
     let spotlightSize = 'transparent 20%, rgba(0, 0, 0, 0.7) 30%';
 
     window.addEventListener('mousemove', e => updateSpotlight(e));
@@ -75,7 +75,7 @@ window.addEventListener("load", () => {
         updateSpotlight(e);
     });
 
-    function updateSpotlight(e) {
+    function updateSpotlight(e: MouseEvent) {
 		
         spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
     }
