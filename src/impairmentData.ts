@@ -1,12 +1,23 @@
 // array for questions and feelings
-export const impairmentData = [
+
+interface ImpairmentData {
+  impairment: string;
+  about: string;
+  about2: string;
+  website: string;
+  demo: string;
+}
+
+export const impairmentData: ImpairmentData[] = [
     {
       impairment: "Glaucoma",
       about: "Glaucoma is a group of diseases that can damage the eyes optic nerve and result in vision loss and blindness. Glaucoma occurs when the normal fluid pressure inside the eyes slowly rises. However, recent findings now show that glaucoma can occur with normal eye pressure. With early treatment, you can often protect your eyes against serious vision loss.",
 
       about2: "There are two major categories “open angle” and “closed angle” glaucoma. Open angle, is a chronic condition that progress slowly over long period of time without the person noticing vision loss until the disease is very advanced, that is why it is called “sneak thief of sight.” Angle closure can appear suddenly and is painful. Visual loss can progress quickly; however, the pain and discomfort lead patients to seek medical attention before permanent damage occurs.",
 
-      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma"
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma",
+
+      demo: "./glaucoma.html"
     },
     {
       impairment: "Macular Degeneration",
@@ -14,7 +25,9 @@ export const impairmentData = [
 
       about2: "Wet AMD is when abnormal blood vessel behind the retina start to grow under the macula, ultimately leading to blood and fluid leakage. Bleeding, leaking, and scarring from these blood vessels cause damage and lead to rapid central vision loss. An early symptom of wet AMD is that straight lines appear wavy. Dry AMD is when the macula thins overtime as part of aging process, gradually blurring central vision. The dry form is more common and accounts for 70–90% of cases of AMD and it progresses more slowly than the wet form. Over time, as less of the macula functions, central vision is gradually lost in the affected eye. Dry AMD generally affects both eyes. One of the most common early signs of dry AMD is drusen.",
 
-      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration"
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
+
+      demo: "glaucoma"
     },
     {
       impairment: "Cateract",
@@ -22,7 +35,9 @@ export const impairmentData = [
 
       about2: "",
 
-      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts"
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+      
+      demo: "glaucoma"
     },
     {
       impairment: "Diabetic Retinopathy",
@@ -30,7 +45,9 @@ export const impairmentData = [
 
       about2: "",
 
-      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy"
+      website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy",
+
+      demo: "glaucoma"
     }
 
   ]

@@ -1,10 +1,17 @@
 import { impairmentData } from "./impairmentData"
 
-const cardsElement = document.querySelector("#cards")
-
 function generateCard() {
 
-    impairmentData.forEach(data => {
+    const cardsElement = document.querySelector("#cards")
+
+    interface ImpairmentData {
+        impairment: string;
+        about: string;
+        website: string;
+        demo: string;
+      }
+
+    impairmentData.forEach((data: ImpairmentData) => {
 
     // create card div
     const cardDiv = document.createElement("div")
@@ -18,10 +25,18 @@ function generateCard() {
     const titleElement = document.createElement("h2")
     titleElement.innerText = data.impairment
 
+    //create button
     const buttonElement = document.createElement("button")
     buttonElement.id = "btn"
     buttonElement.classList.add("btn")
     buttonElement.innerText = "Click to Activate"
+    // buttonElement.setAttribute("onclick",`alert('${data.demo}');`)
+   //  buttonElement.setAttribute("onclick", demoPage(${data.demo}) )
+
+    buttonElement.onclick = function() {
+        const demoUrl: string = data.demo
+        window.location.href = demoUrl
+   }
 
     // append title and button to card-title
     cardTitleDiv.appendChild(titleElement)

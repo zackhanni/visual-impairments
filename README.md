@@ -3,5 +3,5 @@
 ## start local server
 npm start
 
-then hit - go live
+then hit - go live > public
 
