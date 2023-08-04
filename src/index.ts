@@ -29,9 +29,7 @@ function generateCard() {
     const buttonElement = document.createElement("button")
     buttonElement.id = "btn"
     buttonElement.classList.add("btn")
-    buttonElement.innerText = "Click to Activate"
-    // buttonElement.setAttribute("onclick",`alert('${data.demo}');`)
-   //  buttonElement.setAttribute("onclick", demoPage(${data.demo}) )
+    buttonElement.innerText = "Try it out"
 
     buttonElement.onclick = function() {
         const demoUrl: string = data.demo
