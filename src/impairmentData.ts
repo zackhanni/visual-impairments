@@ -17,7 +17,7 @@ export const impairmentData: ImpairmentData[] = [
 
       website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma",
 
-      demo: "./glaucoma.html"
+      demo: "glaucoma.html"
     },
     {
       impairment: "Macular Degeneration",
@@ -27,7 +27,7 @@ export const impairmentData: ImpairmentData[] = [
 
       website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
 
-      demo: "glaucoma"
+      demo: "glaucoma.html"
     },
     {
       impairment: "Cateract",
@@ -37,7 +37,7 @@ export const impairmentData: ImpairmentData[] = [
 
       website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
       
-      demo: "glaucoma"
+      demo: "glaucoma.html"
     },
     {
       impairment: "Diabetic Retinopathy",
@@ -47,7 +47,7 @@ export const impairmentData: ImpairmentData[] = [
 
       website: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy",
 
-      demo: "glaucoma"
+      demo: "glaucoma.html"
     }
 
   ]
